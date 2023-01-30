@@ -1,3 +1,16 @@
+/*Fonts*/
+@font-face 
+{
+    font-family: 'Proxima Nova';
+    src:    url('proximanova-regular-webfont.eot');
+    src:    url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('proximanova-regular-webfont.woff2') format('woff2'),
+            url('proximanova-regular-webfont.woff') format('woff'),
+            url('proximanova-regular-webfont.ttf') format('truetype'),
+            url('proximanova-regular-webfont.svg#proxima_nova_regula') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
 /*--------------------Main--------------------*/
 *
 {
@@ -44,6 +57,7 @@ nav ul li a
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
 }
 .fa
 {
@@ -88,6 +102,15 @@ header
     left: 50%;
     transform: translate(-50%, -50%);
 }
+header h1
+{
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+header p
+{
+    font-family: 'Sorts Mill Goudy';
+}
 .headerbtn
 {
     display: inline-block;
@@ -102,6 +125,7 @@ header
     font-size: 16px;
     letter-spacing: 3px;
     text-transform: uppercase;
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
 
     cursor: pointer;
 }
@@ -112,7 +136,15 @@ header
     padding: 50px 25%;
     text-align: center;
 }
-
+.onecolumn h2
+{
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+.onecolumn p
+{
+    font-family: 'Lato';
+}
 /*For Second Section*/
     .twocolumn
     { 
@@ -129,9 +161,15 @@ header
         padding: 20px;
         color:#ffffff;
     }
+    .column h2
+    {
+        font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+    }
     .column p
     {
         font-size: 16px;
+        font-family: 'Lato';
     }
 
     /* For Third Section*/
@@ -152,6 +190,15 @@ header
         color:#000000;
         padding: 5%
     }
+    .wrappedcolumn h2
+    {
+        font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+    }
+    .wrappedcolumn p
+    {
+        font-family: 'Lato';
+    }
     .contactform
     {
         background: #000000;
@@ -161,12 +208,15 @@ header
     .contactform h2
     {
         text-align: center;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        font-family: 'Sorts Mill Goudy';
+        font-style: italic;
     }
     .contactform label
     {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
+        font-family: 'Lato';
     }
     input[type=text], input[type=email]
     {
@@ -189,10 +239,13 @@ header
         font-size: 16px;
         cursor: pointer;
         text-transform: uppercase;
+        font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
-    footer
+    footer .column p
     {
-        font-size: 10px
+        font-size: 10px;
     }
 
 /*--------------------For responsiveness--------------------*/
@@ -315,6 +368,14 @@ header
         text-align: center!important;
         float: none!important;
     }
+    footer img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40%;
+    }
+
     
 }
 
@@ -365,18 +426,5 @@ header
         {
             padding: 12.5px 65px;
             font-size: 12px;
-        }
-
-        /*For Footer*/
-        footer
-        {
-            font-size: 8px;
-        }
-        footer img
-        {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 40%;
         }
 }
