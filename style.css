@@ -1,0 +1,382 @@
+/*--------------------Main--------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*For Navigation Bar*/
+nav
+{
+    height: 3.125em;
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+nav .logo
+{
+    margin-left: 150px;
+}
+nav .logo img
+{
+    height: 100%;
+}
+nav ul
+{
+    margin-top: 15px;
+    margin-right: 150px;
+    float: right;
+  
+}
+nav ul li
+{
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li a
+{
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.fa
+{
+    margin-left: 15px;
+}
+nav a.active
+{
+    color: #dca115!important;
+}
+nav a:hover
+{
+    color: #7c8080;
+    transform: 0.5s;
+}
+nav .navbtn
+{
+    display: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    float: right;
+
+    cursor: pointer;
+}
+#navbtn
+{
+    display: none;
+}
+
+/*For Header*/
+header
+{
+    height: 100vh;
+    background: url(background.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.headercontent
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.headerbtn
+{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #000000;
+    padding: 12px 60px;
+    border: none;
+    color: #ffffff;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+/*For First Section*/
+.onecolumn
+{
+    padding: 50px 25%;
+    text-align: center;
+}
+
+/*For Second Section*/
+    .twocolumn
+    { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 50px 15%;
+        background: #000000;
+    }
+    .column 
+    {
+        flex: 50%;
+        padding: 20px;
+        color:#ffffff;
+    }
+    .column p
+    {
+        font-size: 16px;
+    }
+
+    /* For Third Section*/
+    .wrapped
+    { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 50px 16%;
+        background: #ffffff;
+    }
+    .wrappedcolumn 
+    {
+        flex: 50%;
+        padding: 20px;
+        background: #dde5e5;
+        color:#000000;
+        padding: 5%
+    }
+    .contactform
+    {
+        background: #000000;
+        color:#ffffff;
+        padding: 10%;
+    }
+    .contactform h2
+    {
+        text-align: center;
+        margin-bottom: 20px
+    }
+    .contactform label
+    {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    input[type=text], input[type=email]
+    {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .button
+    {
+        background-color: #dca115;
+        border: none;
+        color: #ffffff;
+        padding: 15px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    footer
+    {
+        font-size: 10px
+    }
+
+/*--------------------For responsiveness--------------------*/
+@media (max-width: 1150px)
+{
+    /*For Navigation Bar*/
+    nav .logo
+    {
+        margin-left: 50px
+    }
+        nav ul
+    {
+        margin-right: 50px;
+    }
+
+    /*For Header*/
+    header h1
+    {
+        font-size: 24px;
+    }
+    header p
+    {
+        font-size: 14px;
+    }
+    .headerbtn
+    {
+        padding: 11px 55px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    /*For First Section*/
+    .onecolumn
+    {
+        padding: 50px 15%;
+    }
+
+    /*For Second Section*/
+    .twocolumn
+    { 
+        padding: 50px 5%;
+    }
+
+    /*For Third Section*/
+    .wrapped
+    {
+        padding: 50px 6%;
+    }
+}
+
+@media (max-width: 950px)
+{
+    /*For Navigation Bar*/
+    nav .logo
+    {
+        margin-left: 15px;
+    }
+    nav .navbtn
+    {
+        display: block;
+    }
+    nav ul
+    {
+        position: fixed;
+        margin-top: -0.3125em;
+        width: 100%;
+        height: 16em;
+        padding-top: 20px;
+
+        background-color: rgba(0,0,0,.90);
+
+        text-align: center;
+        
+        top: -100%;
+        transition: all .5s;
+    }
+    nav ul li
+    {   
+        display: block;
+        margin-left:0px;    
+    }
+    nav ul li a
+    {
+        font-size: 12px;
+        line-height: 45px;
+    }
+    .fa
+    {
+        margin: 15px;
+    }
+    #navbtn:checked ~ ul
+    {
+        margin-top: 3.125em;
+        top: 0;
+    }
+
+    /*For Header*/
+    .headerbtn
+    {
+        padding: 10px 50px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /*For Second Section*/
+    .column 
+    {
+        flex: 100%;
+    }
+
+    /*For Third Section*/
+    .wrappedcolumn 
+    {
+        flex: 100%;
+    }
+
+    /*For Footer*/
+    footer p
+    {
+        text-align: center!important;
+        float: none!important;
+    }
+    
+}
+
+@media (max-width: 599px)
+{
+        /*For Header*/
+        .headerbtn
+        {
+            padding: 9px 45px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        /*For First Section*/
+        .onecolumn h2
+        {
+            font-size: 20px;
+        }
+        .onecolumn p
+        {
+            font-size: 12px;
+        }
+
+        /*For Second Section*/
+        .twocolumn h2
+        { 
+            font-size: 20px;
+        }
+        .twocolumn p
+        {
+            font-size: 12px;
+        }
+
+        /*For Third Section*/
+        .wrapped h2
+        { 
+            font-size: 20px;
+        }
+        .wrapped p, .wrapped label
+        {
+            font-size: 12px;
+        }
+        input[type=text], input[type=email]
+        {
+            height: 27.5px;
+        }
+        .button
+        {
+            padding: 12.5px 65px;
+            font-size: 12px;
+        }
+
+        /*For Footer*/
+        footer
+        {
+            font-size: 8px;
+        }
+        footer img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40%;
+        }
+}
